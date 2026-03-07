@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+#content {
+    visibility: hidden;
+}
+
 #content ruffle-player {
     position: fixed;
     z-index: 2;
