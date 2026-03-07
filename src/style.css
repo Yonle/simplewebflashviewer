@@ -1,0 +1,29 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+#note {
+    color: #a3a3a3;
+}
+
+#title {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+#title h3 {
+    margin: 0;
+}
+
+#content ruffle-player {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+}
