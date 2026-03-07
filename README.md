@@ -14,7 +14,7 @@ to use it in your site, you use a iframe like this:
     height="480"
     allow="fullscreen"
     style="border-color: transparent"
-    sandbox="allow-scripts allow-same-origin"
+    sandbox="allow-scripts allow-modals allow-same-origin"
 />
 ```
 
