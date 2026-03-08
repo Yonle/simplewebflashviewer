@@ -31,7 +31,6 @@ const rufflePlayerConfig = {
     "allowFullscreen": true,
     "showSwfDownload": true,
     "warnOnUnsupportedContent": true,
-    "contextMenu": "on",
 
     "scale": "showAll",
     "letterbox": "on",
