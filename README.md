@@ -14,9 +14,11 @@ to use it in your site, you use a iframe like this:
     height="480"
     allow="fullscreen"
     style="border-color: transparent"
-    sandbox="allow-scripts allow-modals allow-same-origin"
+    sandbox="allow-scripts allow-modals allow-popups allow-downloads allow-same-origin"
 />
 ```
+
+some of the restrictions has been set under `src/loader.js`, so several options on the iframe's `sandbox` attribute should be fine.
 
 you can adjust the width and height to your liking.
 
