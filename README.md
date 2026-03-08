@@ -37,3 +37,10 @@ for the csp at `https://media.yourdomain.com/flashviewer/`, because ruffle doesn
 
 you might want to also set this:
 - `frame-ancestors 'self' https://yourdomain.com` assuming you're using this for `https://yourdomain.com`
+
+## optimization
+
+you might want to set the `cache-control` header to be this:
+- `public, max-age=86400, immutable`
+
+this ensures that browser do not reload ruffle from server everytime & makes ruffle loading faster.
