@@ -39,9 +39,16 @@ const rufflePlayerConfig = {
 }
 
 const note = document.getElementById("note")
+const enote = document.getElementById("extra_note")
 const content = document.getElementById("content")
 
 let loadingInt = null
+let timeout = null
+
+function slowLoadingNote() {
+    enote.innerText = "Slow loading? Check your internet\nand ensure WebAssembly is on"
+    enote.style.visibility = "visible"
+}
 
 function loadingBlink() {
     note.innerText = "Now loading..."
@@ -61,12 +68,16 @@ function loadingBlink() {
 
         note.style.visibility = visibility
     }, 170)
+
+    timeout = setTimeout(slowLoadingNote, 5000)
 }
 
 function stopLoading() {
     clearInterval(loadingInt)
+    clearTimeout(timeout)
     note.style.visibility = "visible"
     note.style.color = "#a3a3a3"
+    enote.style.visibility = "hidden"
 }
 
 loadingBlink()

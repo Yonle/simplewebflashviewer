@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-#note {
+#note, #extra_note {
     color: #a3a3a3;
 }
 
