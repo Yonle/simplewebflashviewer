@@ -33,7 +33,7 @@ you will need to ensure that your root domain has a csp setting of `frame-src 's
 
 for the csp at `https://media.yourdomain.com/flashviewer/`, because ruffle doesn't understand nonce yet, you will need to ensure that these are set:
 - `script-src 'self' 'wasm-unsafe-eval'`
-- `style-css 'self' 'unsafe-inline'`
+- `style-src 'self' 'unsafe-inline'`
 
 you might want to also set this:
 - `frame-ancestors 'self' https://yourdomain.com` assuming you're using this for `https://yourdomain.com`
