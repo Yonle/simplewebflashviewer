@@ -31,7 +31,7 @@ to load an swf, you need to invoke this in your javascript:
 
 ## csp
 
-you will need to ensure that your root domain has a csp setting of `frame-src 'self' https://media.yourdomain.com/flashviewer/`.
+you will need to ensure that your root domain has a csp setting of `frame-src 'self' data: blob: https://media.yourdomain.com/flashviewer/`.
 
 for the csp at `https://media.yourdomain.com/flashviewer/`, because ruffle doesn't understand nonce yet, you will need to ensure that these are set:
 - `script-src 'self' 'wasm-unsafe-eval'`
