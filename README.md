@@ -42,7 +42,7 @@ you might want to also set this:
 
 ## optimization
 
-you might want to set the `cache-control` header to be this:
-- `public, max-age=86400, immutable`
+you need to also set the `cache-control` header to be this:
+- `public, max-age=604800, immutable`
 
-this ensures that browser do not reload ruffle from server everytime & makes ruffle loading faster.
+this ensures that browser do not reload ruffle runtime from server everytime & makes ruffle loading faster, because the ruffle wasm is sized around **13 MB**.
