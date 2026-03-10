@@ -48,9 +48,15 @@ const content = document.getElementById("content")
 let loadingInt = null
 let timeout = null
 
+function stillLoadingNote() {
+    enote.innerText = "Still loading?\nTry reload flash loader if persist."
+}
+
 function slowLoadingNote() {
     enote.innerText = "Slow loading? Check your internet\nand ensure WebAssembly is on"
     enote.style.visibility = "visible"
+
+    timeout = setTimeout(stillLoadingNote, 20000)
 }
 
 function loadingBlink() {
