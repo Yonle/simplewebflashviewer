@@ -32,7 +32,6 @@ const rufflePlayerConfig = {
     "showSwfDownload": true,
     "warnOnUnsupportedContent": true,
 
-    "salign": "T",
     "forceAlign": true,
     "forceScale": true,
     "scale": "showAll",
