@@ -31,6 +31,7 @@ const rufflePlayerConfig = {
     "allowFullscreen": true,
     "showSwfDownload": true,
     "warnOnUnsupportedContent": true,
+    "unmuteOverlay": "visible",
 
     "forceAlign": true,
     "forceScale": true,
