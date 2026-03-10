@@ -32,6 +32,7 @@ const rufflePlayerConfig = {
     "showSwfDownload": true,
     "warnOnUnsupportedContent": true,
 
+    "forceScale": true,
     "scale": "showAll",
     "letterbox": "on",
     "splashScreen": false,
