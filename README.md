@@ -4,7 +4,7 @@ this is a simple flash viewer used for `<iframe>` in other site.
 
 ## using it
 
-whatever is in `src/` is a static site, but you will need to download the [ruffle's web package](https://ruffle.rs/downloads#website-package), then extract the zip to `src/ruffle/`
+whatever is in `src/` is a static site, but you will need to download the [ruffle's web package](https://ruffle.rs/downloads#website-package), then extract the zip to `src/ruffle/`. Note that files that ends with `.wasm` extension must be served with `application/wasm` mimetype.
 
 to use it in your site, you use a iframe like this:
 ```html
