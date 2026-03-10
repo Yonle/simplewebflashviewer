@@ -38,6 +38,7 @@ const rufflePlayerConfig = {
     "scale": "showAll",
     "letterbox": "on",
     "splashScreen": false,
+    "wmode": "direct",
 }
 
 const note = document.getElementById("note")
