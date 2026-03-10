@@ -31,14 +31,18 @@ to load an swf, you need to invoke this in your javascript:
 
 ## csp
 
-you will need to ensure that your root domain has a csp setting of `frame-src 'self' data: blob: https://media.yourdomain.com/flashviewer/`.
+### root domain (the user/frontend)
 
-for the csp at `https://media.yourdomain.com/flashviewer/`, because ruffle doesn't understand nonce yet, you will need to ensure that these are set:
+you will need to ensure that your root domain that loads the iframe has a csp setting of `frame-src 'self' data: blob: https://media.yourdomain.com/flashviewer/ https://media.yourdomain.com/media/`, assuming that most of the flash are loaded from `https://media.yourdomain.com/media/`
+
+### iframe domain (the simpleWebFlashViewer)
+
+for the csp on the iframe at `https://media.yourdomain.com/flashviewer/`, because ruffle doesn't understand nonce yet, you will need to ensure that these are set:
 - `script-src 'self' 'wasm-unsafe-eval'`
 - `style-src 'self' 'unsafe-inline'`
 
 you might want to also set this:
-- `frame-ancestors 'self' https://yourdomain.com` assuming you're using this for `https://yourdomain.com`
+- `frame-ancestors 'self' https://yourdomain.com` assuming you're using this for `https://yourdomain.com` as the root domain.
 
 ## optimization
 
