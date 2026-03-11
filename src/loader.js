@@ -53,7 +53,7 @@ function stillLoadingNote() {
 }
 
 function slowLoadingNote() {
-    enote.innerText = "Slow loading? Content is probably big.\nCheck your internet and ensure that WebAssembly is on"
+    enote.innerText = "Slow loading? Content is probably big.\nCheck your internet connection\nand ensure that WebAssembly is on"
     enote.style.visibility = "visible"
 
     timeout = setTimeout(stillLoadingNote, 20000)
