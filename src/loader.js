@@ -23,7 +23,7 @@ const rufflePlayerConfig = {
     "openUrlMode": "confirm",
 
     "autoplay": "on",
-    "logLevel": "error",
+    "logLevel": "trace",
 
     // misc
     "menu": true,
