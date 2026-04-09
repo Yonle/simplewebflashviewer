@@ -50,3 +50,5 @@ you need to also set the `cache-control` header to be this:
 - `public, max-age=604800, immutable`
 
 this ensures that browser do not reload ruffle runtime from server everytime & makes ruffle loading faster, because the ruffle wasm is sized around **13 MB**.
+
+your HTTP server **must** serve this static page with compression enabled to reduce the ruffle wasm from **13 MB** all the way to just **4 MB** (if done via zstd).
